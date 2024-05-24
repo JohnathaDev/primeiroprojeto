@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+@font-face {
+    font-family: 'Fast';
+    src: url('../fontes/racing.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cinza1: #333333;
+    --cinza2: #666666;
+    --cinza3: #A9A9A9;
+    --cinza4: #CCCCCC;
+    --marrom1: #2C1D0E;
+    --marrom2: #815529;
+    --marrom3: #9D6832;
+    --marrom4: #B97A3B;
+    --marrom5: #D68D45;
+
+    --fontepadrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontedestaque: "Racing Sans One", sans-serif;
+    --fontecorrida: 'Fast', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--marrom5);
+    font-family: var(--fontepadrao);
+}
+a.externo::after {
+    content: '\1F517';
+}
+header {
+    background-image: linear-gradient(180deg, var(--marrom3), var(--marrom1));
+    min-height: 150px;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fontecorrida);
+    color: white;
+    font-weight: lighter;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+header > p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    font-weight: lighter;
+    margin: auto;
+    font-style: italic;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+nav {
+    background-color: var(--marrom1);
+    padding: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.295);
+}
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+nav > a:hover {
+    background-color: var(--marrom5);
+    color: var(--marrom1);
+    border-radius: 5px 5px 0px 0px;
+}
+main {
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--marrom1);
+}
+main img {
+    width: 100%;
+}
+
+main h1 {
+    font-family: var(--fontedestaque);
+    font-size: 2.5em;
+    color: var(--marrom1);
+}
+main h2 {
+    font-family: var(--fontedestaque);
+    font-size: 2em;
+    background-image: linear-gradient(90deg, var(--marrom4), transparent);
+    color: var(--marrom1);
+    text-indent: 15px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+main > article > p strong {
+    color:var(--marrom2);
+    font-weight: bolder;
+}
+main > article > p a {
+    color:var(--marrom1);
+    font-weight: bold;
+    background-color: var(--marrom5);
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    color:var(--marrom2);
+}
+div.video {
+    margin: 0px -20px 30px -20px;
+    background-color: var(--marrom2);
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+section{
+    background-color: var(--marrom5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.507);
+    max-width: 700px;
+    margin: auto;
+}
+section > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F525\0020\0020';
+    padding-top: 10px;
+}
+section > h3 {
+    background-color: var(--marrom2);
+    color: white; 
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
+}
+section > p {
+    text-align: center;
+    margin-bottom: -5px;
+}
+footer {
+    background-color: var(--marrom1);
+    color: white;
+    text-align: right;
+    font-size: 0.8em;
+}
+#trator {
+    display: flex;
+}
+#antigo {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+#cara {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
